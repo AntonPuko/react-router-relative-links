@@ -4,7 +4,7 @@ import { formatPattern } from 'react-router/lib/PatternUtils'
 import resolve from 'resolve-pathname'
 
 export const useRelativeLinks = () => ({
-  renderContainer: (Component, props) => (
+  renderRouterContext: (Component, props) => (
     <RelativeLinksContainer Component={Component} routerProps={props}/>
   )
 })
